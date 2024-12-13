@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>passwordGenerator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="password-gen-box">
+            <h2 class="heading">
+                Generate a <br> <span>random passsword</span>
+            </h2>
+            <img id="lock-el" src="/Images/lock (2).png" arial-hidden>
+            <p>Never use an insecure passsword again.</p>
+            <div class="input-box">
+                <label for="password-length">Password length(8-15)</label>
+                <input inputmode="numeric" pattern="[0-9]*" id="password-length" placeholder="Enter password length">
+            </div>
+            <div class="line">
+                <img src="Images/Line 17.png" >
+            </div>
+            <div class="buttons">
+                <button onclick="generatePassword()" >Generate password</button>
+                <button onclick="copyToClipboard()">copy to clipboard</button>
+            </div>
+            <p id="generated-password"><span></span></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

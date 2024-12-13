@@ -1,8 +1,10 @@
 *{
     font-family:arial, sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 body{
+    scroll-behavior: smooth;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,9 +76,9 @@ body{
 .buttons{
     position:absolute;
     top: 26em;
-    left: 1.8em;
+    left: 17px;
     display: flex;
-    gap: 1.9em;
+    gap: 8px;
 }
 .buttons button{
     border: none;

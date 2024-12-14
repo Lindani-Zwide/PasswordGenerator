@@ -35,7 +35,7 @@ function generatePassword() {
   isPasswordGenerated = true;
 }
 function copyToClipboard() {
-  if (isPasswordSet) {
+  if (isPasswordGenerated) {
     const generatedPassword = document.getElementById("generated-password").textContent;
     navigator.clipboard.writeText(generatedPassword).then(() => {
       document.getElementById("generated-password").textContent = "Password copied to clipboard!";
